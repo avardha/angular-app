@@ -13,7 +13,7 @@
   <tr>
     <td>Number Of Bonds</td>
     <td>{{numberOfadjustBonds>0 ? numberOfadjustBonds : numberOfBonds}}</td>
-    <td><input type="text" [maxLength]="maxLength" (change)="adjustBonds($event)"></td>
+    <td><input type="text" [maxLength]="maxLength" [(ngModel)]="numberOfadjustBonds"></td>
   </tr>
   <tr>
     <td>Total</td>

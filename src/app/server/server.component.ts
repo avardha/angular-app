@@ -10,7 +10,7 @@ export class ServerComponent implements OnInit {
   numberOfBonds  = 20;
   maxLength = 2;
   numberOfadjustStocks = 0;
-  numberOfadjustBonds = 0;
+  numberOfadjustBonds: number;
 
   constructor() {
 
@@ -29,7 +29,7 @@ export class ServerComponent implements OnInit {
 
   total(){
     return (this.numberOfadjustStocks > 0 ? this.numberOfadjustStocks : this.numberOfStocks) +
-      (this.numberOfadjustBonds > 0 ? this.numberOfadjustBonds : this.numberOfBonds);
+      Number(this.numberOfadjustBonds > 0 ? this.numberOfadjustBonds : this.numberOfBonds);
   }
 
 }
