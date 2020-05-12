@@ -1,0 +1,25 @@
+<p>This is my portfolio</p>
+
+<table>
+  <tr>
+    <td>Stocks/Bonds</td>
+    <td>Number</td>
+  </tr>
+  <tr>
+    <td>Number Of Stocks</td>
+    <td>{{numberOfadjustStocks>0 ? numberOfadjustStocks : numberOfStocks}}</td>
+    <td><input type="text" [maxLength]="maxLength" (change)="adjustStocks($event)"></td>
+  </tr>
+  <tr>
+    <td>Number Of Bonds</td>
+    <td>{{numberOfadjustBonds>0 ? numberOfadjustBonds : numberOfBonds}}</td>
+    <td><input type="text" [maxLength]="maxLength" (change)="adjustBonds($event)"></td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td>{{total()}}</td>
+  </tr>
+</table>
+<input type="text" value="Enter the server name"/>
+
+
